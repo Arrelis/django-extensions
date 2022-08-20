@@ -411,7 +411,7 @@ class Command(BaseCommand):
             int(self.port),
             handler,
             use_reloader=use_reloader,
-            use_debugger=True,
+            use_debugger=settings.DEBUG,
             extra_files=self.extra_files,
             reloader_interval=reloader_interval,
             reloader_type=reloader_type,
